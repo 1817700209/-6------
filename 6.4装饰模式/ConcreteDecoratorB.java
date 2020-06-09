@@ -1,0 +1,16 @@
+package day03_demo03;
+
+import day03_demo03.Decorator;
+
+public class ConcreteDecoratorB extends Decorator{
+	public void operation() {
+		super.operation();
+		addedBehavior();
+		System.out.println("具体装饰对象B的操作");
+	}
+
+	private void addedBehavior() {
+		// TODO Auto-generated method stub
+		
+	}
+}

@@ -1,0 +1,16 @@
+package day03_demo03;
+
+public class Decorator implements Component{
+	protected Component component;
+	public void operation() {
+		if(null != component) {
+			component.operation();
+		}
+	}
+	public Component getComponent() {
+		return component;
+	}
+	public void setComponent(Component component) {
+		this.component = component;
+	}
+}
